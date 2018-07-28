@@ -12,7 +12,7 @@ class RenameScene extends Scene {
 
   public RenameScene(String[] arr, int cursor) {
     super();
-    
+
     this.nameArray = arr;
     this.selected = cursor;
     this.name = arr[cursor];
@@ -25,8 +25,12 @@ class RenameScene extends Scene {
     message += "\n";
     message += "\n";
     message += this.name + '_';
-    
+
     cl.update(message);
+  }
+
+
+  void draw() {
   }
 
 
@@ -42,7 +46,7 @@ class RenameScene extends Scene {
         message += "Error: entered name length is zero";
       } else {
         this.nameArray[this.selected] = this.name;
-        
+
         sceneAdministrator.set("SELECT_NAME", new SelectNameScene(this.nameArray));
         sceneAdministrator.changeScene("SELECT_NAME");
         return;

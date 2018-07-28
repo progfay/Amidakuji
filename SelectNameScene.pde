@@ -58,6 +58,10 @@ class SelectNameScene extends Scene {
   }
 
 
+  void draw() {
+  }
+
+
   void keyPressed() {
     String message = "";
     message += "Select the member to rename...\n";

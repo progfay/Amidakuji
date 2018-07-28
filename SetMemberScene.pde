@@ -15,6 +15,10 @@ class SetMemberScene extends Scene {
       + "\n"
       + num + '_');
   }
+  
+  
+  void draw() {
+  }
 
 
   void keyPressed() {
