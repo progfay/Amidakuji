@@ -12,23 +12,30 @@ class SelectNameScene extends Scene {
   private int arrayLength = 0;
   private int cursor = 0;
 
+
   public SelectNameScene(int num) {
     super();
+
     this.nameArray = new String [num];
     this.arrayLength = num;
+
     for (int i = 0; i < num; i++) {
       this.nameArray[i] = i + "";
     }
   }
 
+
   public SelectNameScene(String[] arr) {
     super();
+
     this.arrayLength = arr.length;
     this.nameArray = new String [this.arrayLength];
+
     for (int i = 0; i < this.arrayLength; i++) {
       this.nameArray[i] = new String(arr[i]);
     }
   }
+
 
   void setup() {
     String message = "";
@@ -49,6 +56,7 @@ class SelectNameScene extends Scene {
 
     cl.update(message);
   }
+
 
   void keyPressed() {
     String message = "";

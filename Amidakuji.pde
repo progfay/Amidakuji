@@ -38,6 +38,7 @@ CommandLine cl = new CommandLine();
 
 void settings() {
   size(100, 100);
+  
   sceneAdministrator.set("SET_MEMBER", new SetMemberScene());
   sceneAdministrator.changeScene("SET_MEMBER");
 }

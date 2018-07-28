@@ -7,6 +7,7 @@ class SetMemberScene extends Scene {
 
   String num;
 
+
   void setup() {
     this.num = "";
     cl.update("Enter the number of member... (1 < n < 13)\n"
@@ -14,6 +15,7 @@ class SetMemberScene extends Scene {
       + "\n"
       + num + '_');
   }
+
 
   void keyPressed() {
     String message = "Enter the number of member... (1 < n < 13)\n";

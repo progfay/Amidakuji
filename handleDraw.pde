@@ -4,8 +4,12 @@
 
 @Override
   public void handleDraw() {
-  if (g == null) return;
-  if (!looping && !redraw) return;
+  if (g == null) {
+    return;
+  }
+  if (!looping && !redraw) {
+    return;
+  }
   if (insideDraw) {
     System.err.println("handleDraw() called before finishing");
     System.exit(1);
@@ -44,10 +48,14 @@
   }
   g.endDraw();
 
-  if (recorder != null) recorder.endDraw();
+  if (recorder != null) {
+    recorder.endDraw();
+  }
   insideDraw = false;
 
-  if (frameCount != 0) handleMethods("post");
+  if (frameCount != 0) {
+    handleMethods("post");
+  }
 
   frameRateLastNanos = now;
   frameCount++;

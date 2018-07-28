@@ -9,12 +9,15 @@ class RenameScene extends Scene {
   private int selected;
   private String name;
 
+
   public RenameScene(String[] arr, int cursor) {
     super();
+    
     this.nameArray = arr;
     this.selected = cursor;
     this.name = arr[cursor];
   }
+
 
   void setup() {
     String message = "";
@@ -22,8 +25,10 @@ class RenameScene extends Scene {
     message += "\n";
     message += "\n";
     message += this.name + '_';
+    
     cl.update(message);
   }
+
 
   void keyPressed() {
     String message = "Enter the changed name of " + this.nameArray[this.selected] + "\n";
@@ -37,6 +42,7 @@ class RenameScene extends Scene {
         message += "Error: entered name length is zero";
       } else {
         this.nameArray[this.selected] = this.name;
+        
         sceneAdministrator.set("SELECT_NAME", new SelectNameScene(this.nameArray));
         sceneAdministrator.changeScene("SELECT_NAME");
         return;
