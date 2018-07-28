@@ -18,6 +18,20 @@ SceneAdministrator sceneAdministrator = new SceneAdministrator();
 
 CommandLine cl = new CommandLine();
 
+/**
+ * Scene Flow:
+ *
+ * SET_MEMBER (SetMemberScene)
+ *         ↓
+ * SELECT_NAME (SelectNameScene) ←
+ *         ↓                 ↓  ↑
+ * CALCULATE (CalcScene)       → RENAME (RenameScene)
+ *         ↓
+ * DISPLAY (DisplayScene) ←
+ *                     ↓  ↑
+ *                      → SHUFFLE (ShuffleScene)
+ */
+
 void settings() {
   size(100, 100);
   sceneAdministrator.set("SET_MEMBER", new SetMemberScene());
