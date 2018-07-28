@@ -16,6 +16,10 @@
  */
 SceneAdministrator sceneAdministrator = new SceneAdministrator();
 
+/**
+ * Global instance of pseudo CLI controller <br>
+ * view code if you want to know details => ./CommandLine.pde
+ */
 CommandLine cl = new CommandLine();
 
 /**
