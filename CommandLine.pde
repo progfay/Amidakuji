@@ -5,10 +5,13 @@
  * Using update method, clear console and display text.
  */
 class CommandLine {
-  final String CLEAR_LINE = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
+  String CLEAR_LINE = "";
 
   public CommandLine() {
     super();
+    for (int i = 0; i < 20; i++) {
+      CLEAR_LINE += "\n";
+    }
   }
 
   void update(String str) {
