@@ -29,12 +29,14 @@ class DisplayScene extends Scene {
       message += "\n";
     }
     message += "\n";
-    message += "Press enter to redrawing.";
+    message += "Press enter to shuffle.";
     cl.update(message);
   }
 
   void keyPressed() {
     if (key == ENTER) {
+      Permutation shuffleFactor = Permutation.getRandomPermutation(this.arrayLength);
+      this.permutation = Permutation.product(this.permutation, shuffleFactor);
       String message = "";
       for (int i = 0; i < this.arrayLength; i++) {
         message += String.format(this.format, this.nameArray[i]);
@@ -43,7 +45,7 @@ class DisplayScene extends Scene {
         message += "\n";
       }
       message += "\n";
-      message += "Press enter to redrawing.";
+      message += "Press enter to shuffle.";
       cl.update(message);
     }
   }
