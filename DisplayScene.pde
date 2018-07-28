@@ -6,7 +6,7 @@ class DisplayScene extends Scene {
   private int maxStrLength = 0;
   private String format;
 
-  public DisplayScene(String[] arr) {
+  public DisplayScene(String[] arr, Permutation p) {
     super();
     this.arrayLength = arr.length;
     this.nameArray = new String [this.arrayLength];
@@ -17,10 +17,10 @@ class DisplayScene extends Scene {
       }
     }
     this.format = "%" + this.maxStrLength + "s";
+    this.permutation = p.copy();
   }
 
   void setup() {
-    this.permutation = Permutation.getRandomPermutation(this.arrayLength);
     String message = "";
     for (int i = 0; i < this.arrayLength; i++) {
       message += String.format(this.format, this.nameArray[i]);
@@ -35,7 +35,6 @@ class DisplayScene extends Scene {
 
   void keyPressed() {
     if (key == ENTER) {
-      this.permutation = Permutation.getRandomPermutation(this.arrayLength);
       String message = "";
       for (int i = 0; i < this.arrayLength; i++) {
         message += String.format(this.format, this.nameArray[i]);

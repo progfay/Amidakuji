@@ -64,8 +64,8 @@ class SelectNameScene extends Scene {
       sceneAdministrator.changeScene("RENAME");
       return;
     } else if (key == ENTER) {
-      sceneAdministrator.set("DISPLAY", new DisplayScene(this.nameArray));
-      sceneAdministrator.changeScene("DISPLAY");
+      sceneAdministrator.set("CALCULATE", new CalcScene(this.nameArray));
+      sceneAdministrator.changeScene("CALCULATE");
       return;
     }
 
