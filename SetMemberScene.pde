@@ -1,3 +1,6 @@
+/**
+ * Scene of set number of member
+ */
 class SetMemberScene extends Scene {
 
   String num;

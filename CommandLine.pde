@@ -1,3 +1,9 @@
+/**
+ * CommandLine is pseudo CLI.
+ * 
+ * Output display on Processing Console.
+ * Using update method, clear console and display text.
+ */
 class CommandLine {
   final String CLEAR_LINE = "\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n";
 

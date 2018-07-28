@@ -1,3 +1,6 @@
+/**
+ * Scene of display Amidakuji's formated result
+ */
 class DisplayScene extends Scene {
 
   private String[] nameArray;

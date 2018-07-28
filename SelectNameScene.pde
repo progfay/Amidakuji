@@ -1,3 +1,6 @@
+/**
+ * Scene of select name that user want to rename
+ */
 class SelectNameScene extends Scene {
 
   public String[] nameArray;

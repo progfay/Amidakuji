@@ -1,3 +1,7 @@
+/*
+ * For control Event methods by SceneAdministrator
+ */
+
 @Override
   void mouseClicked() {
   sceneAdministrator.getCurrentScene().mouseClicked();

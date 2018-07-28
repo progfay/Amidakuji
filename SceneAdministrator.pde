@@ -1,3 +1,8 @@
+/**
+ * SceneAdministrator is to manage all Scene instances.
+ *
+ * You can add, get, and change Scene.
+ */
 class SceneAdministrator {
   private HashMap<String, Scene> sceneMap     = new HashMap<String, Scene>();
   private String                 currentScene = null;

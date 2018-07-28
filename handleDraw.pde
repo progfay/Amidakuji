@@ -1,3 +1,7 @@
+/*
+ * For control setup and draw by SceneAdministrator
+ */
+
 @Override
   public void handleDraw() {
   if (g == null) return;

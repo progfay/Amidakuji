@@ -1,3 +1,6 @@
+/**
+ * Scene of rename user
+ */
 class RenameScene extends Scene {
 
   private String[] nameArray;

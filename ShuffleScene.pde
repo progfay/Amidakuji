@@ -1,3 +1,6 @@
+/**
+ * Scene of shuffle Amidakuji's result
+ */
 class ShuffleScene extends Scene {
 
   private String[] nameArray;
