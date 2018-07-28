@@ -34,19 +34,7 @@ class DisplayScene extends Scene {
   }
 
   void keyPressed() {
-    if (key == ENTER) {
-      Permutation shuffleFactor = Permutation.getRandomPermutation(this.arrayLength);
-      this.permutation = Permutation.product(this.permutation, shuffleFactor);
-      String message = "";
-      for (int i = 0; i < this.arrayLength; i++) {
-        message += String.format(this.format, this.nameArray[i]);
-        message += " => ";
-        message += this.permutation.getImage(i);
-        message += "\n";
-      }
-      message += "\n";
-      message += "Press enter to shuffle.";
-      cl.update(message);
-    }
+    sceneAdministrator.set("SHUFFLE", new ShuffleScene(this.nameArray, this.permutation));
+    sceneAdministrator.changeScene("SHUFFLE");
   }
 }
