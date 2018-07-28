@@ -1,5 +1,10 @@
 /**
  * Scene of select name that user want to rename
+ * 
+ * ↑: move cursor to up 1
+ * ↓: move cursor to down 1
+ * →: rename current pointed name
+ * Enter: start Amidakuji
  */
 class SelectNameScene extends Scene {
 

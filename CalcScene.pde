@@ -1,3 +1,6 @@
+/**
+ * Scene of calculate Amidakuji's mapping
+ */
 class CalcScene extends Scene {
 
   private String[] nameArray;

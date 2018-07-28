@@ -1,5 +1,7 @@
 /**
  * Scene of rename user
+ *
+ * User can change name like a default input by keyboard
  */
 class RenameScene extends Scene {
 

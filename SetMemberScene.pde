@@ -1,5 +1,7 @@
 /**
  * Scene of set number of member
+ *
+ * User can only use number key and backspace on text input
  */
 class SetMemberScene extends Scene {
 

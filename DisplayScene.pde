@@ -1,5 +1,7 @@
 /**
  * Scene of display Amidakuji's formated result
+ *
+ * format: (name) => (number)
  */
 class DisplayScene extends Scene {
 
